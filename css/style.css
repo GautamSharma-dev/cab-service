@@ -1,0 +1,490 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: "mainTxt-B";
+    src: url(./src/UberMove-Bold.ttf)
+}
+@font-face {
+    font-family: "mainTxt-R";
+    src: url(./src/UberMove-Regular.ttf);
+}
+@font-face {
+    font-family: 'Txt-B';
+    src: url(./src/UberMoveText-Medium.ttf);
+}
+@font-face {
+    font-family: "Txt-R";
+    src: url(./src/UberMoveText-Regular.ttf);
+}
+
+
+#nav {
+    width: 100%;
+    color: #fff;
+    background: #000;
+    font-family: "Txt-R";
+    display: flex;
+    gap : 2.8vw ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.2vw;
+    height : 60px;
+}
+
+#nav-links {
+    font-size: 1.1vmax;
+    letter-spacing: .02vw;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+#logo {
+    font-family: "mainTxt-R";
+    font-size: 2.2vmax;
+}
+#menu {
+     display: flex;
+     gap: 2.5vmax;
+}
+#nav a {
+    text-decoration: none;
+    color: #fff;
+}
+#nav-login {
+    display: flex;
+    gap: 1.9vmax ;
+    font-size: 1.1vmax;
+    align-items: center;
+}
+
+#contact-us {
+    background: #383636;
+    padding: .65vw 1.3vw;
+    border-radius: 40px;
+    font-size: 1.1vw;
+}
+/* hamburger STYLING START */
+.burger {
+    position: relative;
+    width: 2.5vmax;
+    height: 1.5vmax;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 0.2em;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    left: -2px;
+    top:  -3px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    bottom: 0px;
+    left: -2px;
+  }
+/* Hamburger END */
+
+#banner {
+    box-sizing: border-box;
+    display: flex;
+    /* gap: 3vw; */
+    height: calc(100% - 60px);
+    position: relative;
+    padding: 5vw 4vw;
+
+}
+#book-ride {
+    width: 47%;
+    height: 100%;
+}
+#book-ride h2 {
+    font-family: 'mainTxt-B';
+    font-size: 5vmax;
+    line-height: 5vmax;
+    margin-bottom : 1.1vw ;
+    
+}
+#book-ride p {
+    font-size: 1.3vmax;
+    font-family: 'txt-R';
+    margin-bottom: 1.8vmax;
+}
+
+#details-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vmax;
+}
+
+#icon-1 {
+    height: 9px;
+    width:  9px;
+    border: 3px solid #000;
+    border-radius: 100%;
+}
+#icon-2 {
+    height: 9px;
+    width:  9px;
+    border: 3px solid #000;
+}
+
+#details-box #location , #destination {
+    background: #ece8e8;
+    width: 22vmax;
+    height: 1.8vw;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 25px 20px;
+    font-size: 1.2vmax;
+    position: relative;
+}
+
+
+#location::after {
+    content: "";
+    height: 38px;
+    width: 1.2px;
+    background: #000;
+    bottom: -28px;
+    left: 24px;
+    position: absolute;
+    }
+
+#location-input , #destination-input {
+    background: none;
+    border: none;
+    outline: 0;
+    color: #383636;
+}
+
+#location-input::placeholder , #destination-input::placeholder {
+    color: #2e1717;
+}
+
+#location-input:focus #location{
+    background: #fff;
+    border: 1px solid #000;
+}
+
+#btn-box {
+    display: flex;
+    gap: 2.5vmax;
+    margin-top: 1.5vmax;
+}
+#btn-2 {
+    background:#ece8e8;
+    color: #000;
+}
+
+#btn-1 {
+    background: #000;
+    color: #fff;
+}
+
+#btn-box a {
+    padding: .90vw 1.3vw;
+    border-radius: 8px;
+    font-family: txt-B;
+    font-size: 1.1vmax;
+}
+
+#banner-img{
+    width: 53%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+}
+#banner-img img {
+    width: 100%;
+    height : auto ;
+    border-radius: 20px;
+    margin: auto 0;
+
+}
+
+#our-service {
+    padding: 2vw 4vw;
+    box-sizing: border-box;
+
+}
+#our-service h2 {
+    font-size: 2vmax;
+    font-family: "mainTxt-B";
+    margin: 2.5vw 0 2vw 0;
+
+}
+
+#service-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service-wrapper {
+    display: flex;
+    gap: 3vmax;
+}
+.service-box {
+    border-radius: 10px;
+    background-color: #ece8e8;
+    width: 30%;
+    padding: 2vmax 1vmax;
+    display: flex;
+}
+.service-box .details {
+    width: 60%;
+}
+.service-box .details h3 {
+    font-family: mainTxt-B;
+    font-size: 1.3vw;
+}
+.service-box .details p {
+    font-size: .90vw;
+    font-family: txt-R;
+    margin: 1vmax 0;
+}
+.service-box .icon-sec {
+    width: 40%;
+}
+
+.service-box .details a {
+    display: inline-block;
+    background: #fff;
+    padding: .70vw 1.5vw;
+    border-radius: 20px;
+    font-family: txt-B;
+    font-size: .95vmax;
+    color: #000;
+}
+
+/* Our CABS  */
+#our-cabs {
+   background: #ece8e8;
+   margin-top: 5vmax;
+   padding: 2vw 4vw;
+}
+#our-cabs h2 {
+    font-size: 2vmax;
+    font-family: "mainTxt-B";
+    margin: 0 0 2vmax 0;
+} 
+#our-cabs p {
+    font-size: 1vw;
+    font-family: txt-R;
+    margin-bottom: 1vmax ;
+}
+
+.bottom h3 {
+    font-size: 1.7vmax;
+    font-family: "mainTxt-B";
+    text-transform: uppercase;
+    margin: 2vmax 0;
+    letter-spacing: .5vmax;
+}
+.bottom a {
+    text-decoration: none;
+    display: block;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 1vw 0;
+    text-align: center;
+}
+
+
+/*  --- SLIDER  */
+.slide-container {
+    padding: 2vmax 3vmax;
+    background: #ffffff;
+    position: relative;
+}
+.slide-container img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+  /*  SLIDER ENDDDD............. */
+
+  /* OUR SAFTEY */
+  #our-saftey {
+    margin-top: 5vmax;
+    padding: 2vw 4vw;
+ }
+ #our-saftey h2 {
+     font-size: 2vmax;
+     font-family: "mainTxt-B";
+     margin: 0 0 2vmax 0;
+ }
+
+ .saftey-wrapper {
+    display: flex;
+    gap: 4vmax;
+    position: relative;
+
+ }
+ .saftey-box {
+  width: 50%;
+  
+ }
+
+ .saftey-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ .details h3 {
+    font-family: mainTxt-R;
+    font-size: 2vmax;
+    margin: 2vmax 0 1.5vmax 0;
+ }
+ .details p {
+    font-size: 1.2vmax;
+    font-family: txt-R;
+    margin-bottom: 3vmax;
+ }
+ .details a {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 1vmax 1.5vmax;
+    border-radius: 20px;
+    font-family: txt-B;
+    font-size: 1.1vmax;
+
+ }
+/*  RESPONSIVE  */
+
+@media (max-width : 1135px) {
+    .burger {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}
+
+@media (max-width : 1050px) {
+    #details-box #location , #destination {
+        width: 30vmax;
+        height: 20px;
+    }
+    #logo {
+        font-size: 2.5vmax;
+    }
+   
+ }
+
+ @media (max-width : 950px) {
+    #book-ride {
+        width : 100% ;
+        text-align: left;
+        padding-right: 10vmax;
+    }
+    #banner-img {
+        display: none;
+    }
+    #nav-links {
+        font-size: 2vmax; }
+        #details-box {
+          align-items: flex-start;
+        
+        }
+
+   
+ }
+
+ @media (max-width : 800px) {
+    #details-box {
+        gap : 2vmax
+    }
+    #details-box #location ,#destination {
+        width: 50vmax;
+        height: 10vmax; }
+    }
+
+    @media (max-width : 650px) {
+        #details-box {
+            gap : 2.7vmax
+        }
+        #details-box #location ,#destination {
+            width: 90%;
+            height: 7vmax; }
+            #book-ride {
+                padding-right: 5vmax;
+            }
+            #btn-box a {
+                padding: 1.2vmax 1.9vmax;
+                font-size : 2.9vw }
+                #book-ride p {
+                    font-size: 1.6vmax; }
+
+             .service-box {
+                width: 60%;
+                margin-top: 2vmax;
+                margin-left: 1vmax;
+             }       
+             #our-service h2 {
+                font-size: 2.5vmax;
+                margin: 5vw 0 2vw 0;
+            
+            }
+        }
+
