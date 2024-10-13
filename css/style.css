@@ -345,6 +345,7 @@ a {
     letter-spacing: .5vmax;
 }
 .bottom a {
+    text-transform: uppercase;
     text-decoration: none;
     display: block;
     background: #000;
@@ -633,24 +634,29 @@ a {
                 margin-bottom: 1vmax ;
             }
 
-            /* .bottom a {
+            .bottom a {
+                font-family: Txt-B;
+                font-size: 2vmax;
                 width: 100%;
-                padding: 1vw 0;
+                padding: 1.5vw 0;
                 text-align: center;
             }
+            .bottom h3 {
+                font-size: 3vmax;
+            }
             #btn-box a {
-                padding: 2vw 2.5vw;
+                padding: 2.2vw 2.7vw;
                 font-size: 1.90vmax;
-            } */
+            }
              
             .service-box {
                 padding: 1vmax 0 3vw 1.5vmax;
             }
             .service-box .details h3 {
-                font-size: 4.25vw;
+                font-size: 4vw;
             }
             .service-box .details p {
-                font-size: 1.20vmax;
+                font-size: 2vmax;
                 font-family: txt-R;
                 margin: 1.85vmax 0;
             }
@@ -662,8 +668,15 @@ a {
                 font-size: 1.2vmax;
                 color: #000;
             }
+
+            #our-saftey h2 {
+                font-size: 4vmax;
+                font-family: mainTxt-B;
+                line-height: 3vmax;
+                margin-bottom : 3.5vmax ;
+                
             #testimonials h2 {
-                font-size: 3vmax;
+                font-size: 3.3vmax;
                 margin-left: 2vmax;
             }
             #testimonials {
@@ -679,6 +692,7 @@ a {
                 height: 8vmax;
                 width:  8vmax ;}
                 .stars i {
-                    font-size: 2.40vmax;
+                    font-size: 2.40vmax; }
+
         }
 
