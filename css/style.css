@@ -289,6 +289,7 @@ a {
 }
 .service-box .details {
     width: 60%;
+    text-align: left;
 }
 .service-box .details h3 {
     font-family: mainTxt-B;
@@ -415,7 +416,93 @@ a {
     font-size: 1.1vmax;
 
  }
-/*  RESPONSIVE  */
+
+ #testimonials {
+    background-color: #000;
+    color: #fff;
+    padding: 2vw 4vw;
+    width: 100%;
+    margin-top: 5vmax;
+    
+ }
+ #testimonials h2 {
+    font-size: 2vmax;
+    font-family: "mainTxt-B";
+    margin: 2vmax 0;
+ }
+ #review-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vmax;
+ }
+
+ /*  REVIEW BOXX---------------------- */
+
+ .card {
+    background: #fff;
+    color: #000;
+    font-family: Txt-B;
+    padding: 2.70vmax;
+    width: 80%;
+    position: relative;
+    
+  }
+  .card::after {
+    content: "<i class="ri-chat-quote-fill"></i>";
+    height: 100px;
+    top: 10px;
+    right: 10px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-1 {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+  }
+  .testi-logo i {
+    display: inline-block;
+    font-size: 4vmax;
+    transform: translate( 2vmax , -3.50vmax);
+  }
+  .header .image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .image img {
+   width: 100%;
+   height: auto;
+  }
+  
+  .name {
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, 1);
+  }
+  
+  .message {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: #000;
+    font-size: 2vmax;
+  }
+  .stars i {
+    color: gold;
+  }
+ /* REVIEW BOX-------------- END------ */
+/*  RESPONSIVE-----------------------  */
 
 @media (max-width : 1135px) {
     .burger {
@@ -545,6 +632,8 @@ a {
                 padding: 2vw 2.5vw;
                 font-size: 2vmax;
             }
+             
+            .service-box {
                 padding: 2.5vmax 0 0 2.5vmax;
             }
             .service-box .details h3 {
@@ -562,6 +651,16 @@ a {
                 font-family: txt-B;
                 font-size: 1.5vmax;
                 color: #000;
+            }
+            #testimonials h2 {
+                font-size: 3vmax;
+                margin-left: 2vmax;
+            }
+            #testimonials {
+                padding: 1vmax;
+            }
+            .card {
+                width: 100%;
             }
         }
 
