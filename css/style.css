@@ -491,5 +491,55 @@ a {
                 margin: 5vw 0 2vw 0;
             
             }
+            #logo {
+                font-size: 3vmax;
+                letter-spacing: .28vmax;
+            }
+            #nav-login {
+                font-size: 1.85vmax;
+            }
+            #contact-us {
+                font-size: 1.65vmax;
+                padding: 1vw 2vw;
+            }
+
+            #book-ride h2 {
+                font-size: 4.80vmax;
+                font-family: mainTxt-B;
+                line-height: 5.5vmax;
+                margin-bottom : 1.8vw ;
+                margin-top: 2vmax;
+                
+            }
+            #book-ride p {
+                font-size: 2.2vmax;
+                margin-bottom: 3vmax;
+            }
+
+            #details-box #location , #destination {
+                width: 100%;
+            }
+
+            #our-cabs h2 {
+                font-size: 2.80vmax;
+                font-family: "mainTxt-B";
+                margin: 2vmax 0 1.50vmax 0;
+            } 
+
+            #our-cabs p {
+                font-size: 1.90vmax ; 
+                font-family: txt-R;
+                margin-bottom: 1vmax ;
+            }
+
+            .bottom a {
+                width: 100%;
+                padding: 1vw 0;
+                text-align: center;
+            }
+            #btn-box a {
+                padding: 2vw 2.5vw;
+                font-size: 2vmax;
+            }
         }
 
