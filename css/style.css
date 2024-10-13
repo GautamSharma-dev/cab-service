@@ -301,6 +301,11 @@ a {
 }
 .service-box .icon-sec {
     width: 40%;
+    position: relative;
+}
+.service-box .icon-sec img {
+    width: 100%;
+    height: auto;
 }
 
 .service-box .details a {
@@ -477,7 +482,7 @@ a {
                     font-size: 1.6vmax; }
 
              .service-box {
-                width: 60%;
+                width: 100%;
                 margin-top: 2vmax;
                 margin-left: 1vmax;
              }       
