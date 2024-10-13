@@ -480,7 +480,7 @@ a {
                 font-size : 2.9vw }
                 #book-ride p {
                     font-size: 1.6vmax; }
-
+           
              .service-box {
                 width: 90%;
                 margin-top: 2vmax;
@@ -516,6 +516,10 @@ a {
                 margin-bottom: 3vmax;
             }
 
+            #service-wrapper {
+                justify-content: center;
+            }
+
             #details-box #location , #destination {
                 width: 100%;
             }
@@ -540,6 +544,24 @@ a {
             #btn-box a {
                 padding: 2vw 2.5vw;
                 font-size: 2vmax;
+            }
+                padding: 2.5vmax 0 0 2.5vmax;
+            }
+            .service-box .details h3 {
+                font-size: 3vw;
+            }
+            .service-box .details p {
+                font-size: 2.40vw;
+                font-family: txt-R;
+                margin: 2vmax 2vmax;
+            }
+
+            .service-box .details a {
+                padding: 2vw 4vw;
+                border-radius: 20px;
+                font-family: txt-B;
+                font-size: 1.5vmax;
+                color: #000;
             }
         }
 
