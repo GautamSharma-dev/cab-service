@@ -219,6 +219,11 @@ a {
     background: #fff;
     border: 1px solid #000;
 }
+#location i {
+    position: absolute;
+    right: 3%;
+    font-size: 2vmax;
+}
 
 #btn-box {
     display: flex;
@@ -323,8 +328,7 @@ a {
 
 /* Our CABS  */
 #our-cabs {
-   background: #000000;
-   color: #fff;
+   background: #ece8e8;
    margin-top: 5vmax;
    padding: 2vw 10vw;
    width: 100%;
@@ -336,7 +340,7 @@ a {
 } 
 #our-cabs p {
     font-size: 1vw;
-    font-family: txt-B;
+    font-family: txt-R;
     margin-bottom: 1vmax ;
 }
 
@@ -388,8 +392,7 @@ a {
 }
 
 .splide__pagination__page.is-active {
-    background: #ffffff !important;
-    opacity: 1 !important;
+    background: #000 !important;
 }
 
 .splide__arrow--prev {
