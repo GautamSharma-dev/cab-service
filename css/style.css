@@ -470,10 +470,11 @@ a {
     transform: translate( 2vmax , -3.50vmax);
   }
   .header .image {
-    height: 4rem;
-    width: 4rem;
+    height: 8vmax;
+    width:  8vmax;
     border-radius: 9999px;
     object-fit: cover;
+    object-position: center;
     overflow: hidden;
   }
   .image img {
@@ -482,12 +483,13 @@ a {
   }
   
   .name {
-    margin-top: 0.25rem;
-    font-size: 1.125rem;
+    margin-top: 1.2vmax;
+    font-size: 2vmax;
     line-height: 1.75rem;
     font-weight: 600;
     --tw-text-opacity: 1;
-    color: rgba(55, 65, 81, 1);
+    color: #000;
+    font-family: mainTxt-R;
   }
   
   .message {
@@ -500,6 +502,7 @@ a {
   }
   .stars i {
     color: gold;
+    font-size: 2.60vmax;
   }
  /* REVIEW BOX-------------- END------ */
 /*  RESPONSIVE-----------------------  */
@@ -662,5 +665,13 @@ a {
             .card {
                 width: 100%;
             }
+            .name {
+                margin-top: .1vmax;
+            }
+            .header .image {
+                height: 8vmax;
+                width:  8vmax ;}
+                .stars i {
+                    font-size: 2.40vmax;
         }
 
