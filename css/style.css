@@ -580,6 +580,7 @@ a {
              .service-box {
                 width: 90%;
                 margin-top: 2vmax;
+                margin-bottom: 0;
                 margin-left: 1vmax;
              }       
              #our-service h2 {
