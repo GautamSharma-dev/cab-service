@@ -286,7 +286,9 @@ a {
     width: 30%;
     padding: 2vmax 1vmax;
     display: flex;
+    box-shadow : -1px 3px 4px 0px #adadadee
 }
+
 .service-box .details {
     width: 60%;
     text-align: left;
@@ -321,9 +323,10 @@ a {
 
 /* Our CABS  */
 #our-cabs {
-   background: #ece8e8;
+   background: #000000;
+   color: #fff;
    margin-top: 5vmax;
-   padding: 2vw 4vw;
+   padding: 2vw 10vw;
    width: 100%;
 }
 #our-cabs h2 {
@@ -333,7 +336,7 @@ a {
 } 
 #our-cabs p {
     font-size: 1vw;
-    font-family: txt-R;
+    font-family: txt-B;
     margin-bottom: 1vmax ;
 }
 
@@ -371,6 +374,29 @@ a {
     height: auto;
     object-position: center;
     object-fit: cover;
+}
+
+.splide__arrow {
+    opacity: 1 !important;
+    background: #000000 !important;
+}
+.splide__arrow svg {
+    fill: #fff !important;
+}
+.splide__pagination {
+    bottom : -1.3em !important ;
+}
+
+.splide__pagination__page.is-active {
+    background: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.splide__arrow--prev {
+    left : -2.2em !important;
+}
+.splide__arrow--next {
+    right : -2.2em !important ;
 }
   /*  SLIDER ENDDDD............. */
 
@@ -621,7 +647,9 @@ a {
             #details-box #location , #destination {
                 width: 100%;
             }
-
+            #our-cabs {
+                padding-bottom: 5vmax;
+            }
             #our-cabs h2 {
                 font-size: 2.80vmax;
                 font-family: "mainTxt-B";
@@ -673,7 +701,7 @@ a {
                 font-size: 4vmax;
                 font-family: mainTxt-B;
                 line-height: 3vmax;
-                margin-bottom : 3.5vmax ;
+                margin-bottom : 3.5vmax ;}
                 
             #testimonials h2 {
                 font-size: 3.3vmax;
