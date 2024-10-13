@@ -541,6 +541,94 @@ a {
     font-size: 2.60vmax;
   }
  /* REVIEW BOX-------------- END------ */
+
+ /*  FOOOTEERR STARTSSSSS---- */
+ #footer {
+    margin-top: 3vmax;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 4vmax 2vmax;
+    padding-bottom: 1.50vmax;
+ }
+ #footer-top {
+    gap: 2vmax;
+    
+ }
+ #footer-top h2{
+  font-family: MainTxt-B;
+  font-weight: 600;
+  font-size: 3.2vmax;
+  width: 100%;
+  padding: 5vmax 3vmax 3vmax  ;
+  margin-bottom: 5vmax;
+ }
+ #footer-top #map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+ }
+#footer-top #map-wrapper h3 {
+    font-family: Txt-B;
+    font-size: 2vmax;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 4vmax;
+}
+#footer-top #map-wrapper h3 i {
+    font-weight: 100;
+}
+ #footer-top #map iframe {
+    width: 100%;
+ }
+ #footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2vmax;
+    padding: 3vmax;
+ }
+ #footer-bottom h3 {
+    font-size: 2vmax;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2vmax;
+    font-family: MainTxt-R;
+ }
+ #footer-bottom a {
+    color: #fff;
+    margin: 1vmax;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: .90em;
+    font-family: Txt-R;
+    display: block;
+    text-align: center;
+ }
+ #footer-bottom div {
+    text-align: left;
+ }
+
+ #footer-end {
+    border-top: 1px solid #ece8e8;
+    padding-top: 4vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+ }
+ #footer-end .social-handles {
+    display: flex;
+    gap: 1.5vmax;
+    font-size: 1.50vmax;
+ }
+ #footer-end #tag {
+    font-size: 1.5vmax;
+    font-family: Txt-B;
+ }
+
+ /*  FOOOTEERR ENDSSS---- */
 /*  RESPONSIVE-----------------------  */
 
 @media (max-width : 1135px) {
@@ -718,12 +806,33 @@ a {
             }
             .name {
                 margin-top: .10vmax; }
-            }
-            .header .image {
-                height: 8vmax;
-                width:  8vmax ;}
-                .stars i {
-                    font-size: 2.40vmax; }
 
-        }
+                .header .image {
+                    height: 8vmax;
+                    width:  8vmax ;}
+                    .stars i {
+                        font-size: 2.40vmax; }
+
+                        #footer-bottom h3 {
+                            font-size: 1.6vmax;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            margin-bottom: 1.80vmax;
+                            font-family: MainTxt-R;
+                            
+                         }
+                         #footer-bottom a {
+                            color: #fff;
+                            margin: .90vmax;
+                            font-weight: 200;
+                            text-transform: capitalize;
+                            font-size: .60em;
+                            font-family: Txt-R;
+                            display: block;
+            
+       
+         
+
+
+    } 
 
