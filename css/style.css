@@ -666,7 +666,7 @@ a {
                 width: 100%;
             }
             .name {
-                margin-top: .1vmax;
+                margin-top: .10vmax; }
             }
             .header .image {
                 height: 8vmax;
