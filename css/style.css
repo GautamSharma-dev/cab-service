@@ -2,7 +2,6 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 * {
 margin: 0;
@@ -50,6 +49,7 @@ a {
     display: flex;
     align-items: center;
     gap: 3vw;
+    overflow: hidden;
 }
 #logo {
     font-family: "mainTxt-R";
@@ -98,10 +98,12 @@ a {
     bottom : 0px;
     right: -100%;
     z-index: 99;
-    transition: all ease-in .50s;
+    display: none;
+    transition: all ease-in 4s;
 }
 
 #burger:checked ~ .menu-2 {
+    display: block;
     right: 0px;
 
 }
@@ -523,7 +525,31 @@ a {
     font-size: 2.60vmax;
   }
  /* REVIEW BOX-------------- END------ */
+#book-ride-2 {
+    padding: 3vmax;
+    margin: 2vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vmax;
+}
+ #book-ride-2 h2 {
+    font-size: 3vmax;
+    font-family: "mainTxt-B";
+    margin: 2vmax 0;
 
+    text-transform: capitalize;
+ }
+ #book-ride-2 p {
+    font-family: txt-b;
+    font-size: 1.2vmax;
+    font-family: txt-R;
+    margin-bottom: 3vmax;
+ }
+ #booking {
+    width: 50%;
+    text-align: right;
+ }
  /*  FOOOTEERR STARTSSSSS---- */
  #footer {
     margin-top: 3vmax;
