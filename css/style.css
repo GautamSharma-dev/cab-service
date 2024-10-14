@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 * {
 margin: 0;
@@ -40,6 +41,7 @@ a {
     align-items: center;
     padding: 0 2.2vw;
     height : 60px;
+    overflow: hidden;
 }
 
 #nav-links {
@@ -52,6 +54,7 @@ a {
 #logo {
     font-family: "mainTxt-R";
     font-size: 2.2vmax;
+    z-index: 100;
 }
 #menu {
      display: flex;
@@ -74,67 +77,46 @@ a {
     border-radius: 40px;
     font-size: 1.1vw;
 }
-/* hamburger STYLING START */
+
+
+/* Ham Menuuuu start-------- */
+#burger {
+    display: none;
+}
 .burger {
-    position: relative;
-    width: 2.5vmax;
-    height: 1.5vmax;
-    background: transparent;
     cursor: pointer;
-    display: none;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 0.2em;
+}
+.burger i {
+    font-size: 1.6vw;
+}
+.menu-2 {
     width: 100%;
-    background: #fff;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    left: -2px;
-    top:  -3px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    bottom: 0px;
-    left: -2px;
-  }
-/* Hamburger END */
+    height: 100%;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    bottom : 0px;
+    right: -100%;
+    z-index: 99;
+    transition: all ease-in .50s;
+}
+
+#burger:checked ~ .menu-2 {
+    right: 0px;
+
+}
+#open-menu {
+    font-size: 2vmax;
+}
+#close-menu {
+    color: #fff;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    font-size: 4vmax;
+}
+/* Ham Menuuuu Endd-------- */
+
 
 #banner {
     box-sizing: border-box;
@@ -713,9 +695,11 @@ a {
             #nav-login {
                 font-size: 1.85vmax;
             }
+            .call-now {
+                display: none;
+            }
             #contact-us {
-                font-size: 1.65vmax;
-                padding: 1vw 2vw;
+               display: none;
             }
 
             #book-ride h2 {
@@ -775,16 +759,16 @@ a {
                 font-size: 4vw;
             }
             .service-box .details p {
-                font-size: 2vmax;
+                font-size: 1.55vmax;
                 font-family: txt-R;
-                margin: 1.85vmax 0;
+                margin: 1.55vmax 0;
             }
 
             .service-box .details a {
-                padding: 2vw 4vw;
+                padding: 1.90vw 3.90vw;
                 border-radius: 20px;
                 font-family: txt-B;
-                font-size: 1.2vmax;
+                font-size: 1.12vmax;
                 color: #000;
             }
 
@@ -829,6 +813,9 @@ a {
                             font-size: .75em;
                             font-family: Txt-R;
                             display: block; }
+                            .burger i {
+                                font-size: 3vw;
+                            }
             
        
          
